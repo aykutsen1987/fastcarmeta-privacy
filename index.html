@@ -1,126 +1,183 @@
 <!DOCTYPE html>
-
 <html lang="tr">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FastCarMeta - Gizlilik Politikası</title>
+<title>FastCarMeta - Gizlilik Politikası / Privacy Policy</title>
 <style>
-body{
-    font-family: Arial, sans-serif;
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
-    line-height: 1.7;
-    color: #333;
-}
-h1,h2{
-    color:#1e88e5;
-}
+  body { font-family: Arial, Helvetica, sans-serif; max-width: 900px; margin: auto; padding: 20px; line-height: 1.7; color: #333; }
+  h1, h2 { color: #1e88e5; }
+  h2 { margin-top: 1.6em; }
+  .bar { display: flex; gap: 10px; margin: 8px 0 18px; }
+  .bar button { border: 0; padding: 10px 22px; font-size: 16px; border-radius: 8px; cursor: pointer; background: #e3effc; color: #1e88e5; font-weight: bold; }
+  .bar button.on { background: #1e88e5; color: #fff; }
+  .lang { display: none; }
+  .lang.show { display: block; }
+  footer { margin-top: 2.5em; font-size: 14px; color: #777; }
 </style>
 </head>
 <body>
 
+<div class="bar">
+  <button id="btn-tr" onclick="setLang('tr')">Türkçe</button>
+  <button id="btn-en" onclick="setLang('en')">English</button>
+</div>
+
+<!-- ===================== TÜRKÇE ===================== -->
+<div id="tr" class="lang">
 <h1>FastCarMeta Gizlilik Politikası</h1>
+<p>Son Güncelleme: 1 Kasım 2026</p>
+<p>Bu Gizlilik Politikası, FastCarMeta (paket adı: com.fastcarmeta.game) mobil oyununun kullanımı sırasında hangi bilgilerin işlendiğini, nasıl kullanıldığını ve haklarınızı açıklar. Uygulamayı kullanarak bu politikayı kabul etmiş olursunuz.</p>
 
-<p>Son Güncelleme: 10 Haziran 2026</p>
-
-<p>
-Bu Gizlilik Politikası, FastCarMeta mobil oyununun kullanımı sırasında toplanan bilgilerin nasıl işlendiğini açıklamaktadır.
-FastCarMeta uygulamasını kullanarak bu politikada belirtilen uygulamaları kabul etmiş olursunuz.
-</p>
-
-<h2>Toplanan Bilgiler</h2>
-
-<p>
-FastCarMeta doğrudan kişisel bilgilerinizi talep etmez.
-Ancak uygulama performansını iyileştirmek ve reklam hizmetleri sunmak amacıyla bazı teknik bilgiler otomatik olarak toplanabilir.
-</p>
-
+<h2>1. Topladığımız Bilgiler</h2>
+<p><b>Hesap yoktur.</b> FastCarMeta ad, e-posta, telefon, konum (GPS) veya rehber bilgilerinizi istemez.</p>
+<p><b>a) Otomatik toplanan teknik bilgiler</b></p>
 <ul>
-<li>Cihaz modeli</li>
-<li>İşletim sistemi sürümü</li>
-<li>Uygulama kullanım istatistikleri</li>
-<li>Çökme ve hata raporları</li>
+<li>Cihaz modeli ve işletim sistemi sürümü</li>
+<li>Uygulama kullanım istatistikleri, çökme ve hata raporları</li>
 <li>Reklam kimliği (Advertising ID)</li>
 <li>IP adresi ve bağlantı bilgileri</li>
 </ul>
-
-<h2>Reklam Hizmetleri</h2>
-
-<p>
-FastCarMeta, reklam göstermek amacıyla Google AdMob kullanabilir.
-Google AdMob, kişiselleştirilmiş veya kişiselleştirilmemiş reklamlar sunabilmek için belirli verileri işleyebilir.
-</p>
-
-<p>
-Google'ın veri kullanımı hakkında daha fazla bilgi için:
-</p>
-
-<p>
-<a href="https://policies.google.com/privacy">
-https://policies.google.com/privacy
-</a>
-</p>
-
-<h2>Verilerin Kullanımı</h2>
-
-<p>
-Toplanan veriler aşağıdaki amaçlarla kullanılabilir:
-</p>
-
+<p><b>b) Çok oyunculu ve sıralama özellikleri (oyun içi)</b></p>
 <ul>
-<li>Uygulamanın çalışmasını sağlamak</li>
-<li>Performans iyileştirmeleri yapmak</li>
-<li>Hataları tespit etmek</li>
-<li>Kullanıcı deneyimini geliştirmek</li>
-<li>Reklam hizmetleri sunmak</li>
+<li><b>Oyuncu adı:</b> sizin yazdığınız takma ad (en çok 14 karakter). Gerçek adınızı yazmamanızı öneririz.</li>
+<li><b>Rastgele cihaz kimliği (UUID):</b> sıralamada sizi tanımak için uygulama tarafından rastgele üretilir; Google hesabınızla veya kimliğinizle ilişkili değildir.</li>
+<li><b>Yarış sonuçları:</b> pist, puan ve süre.</li>
+<li><b>Yarış sırasında araç konumu:</b> diğer oyuncularla senkron için anlık iletilir, kalıcı olarak saklanmaz.</li>
+</ul>
+<p><b>c) Cihazınızda saklananlar:</b> oyun ilerlemesi, ayarlar, rekorlar ve oyuncu adınız yalnızca cihazınızda tutulur.</p>
+
+<h2>2. Reklam Hizmetleri</h2>
+<p>FastCarMeta, reklam göstermek için Unity LevelPlay (ironSource) reklam aracılık platformunu ve bu platform üzerinden bağlı reklam ağlarını (ör. Unity Ads, Google AdMob) kullanabilir. Bu hizmetler, kişiselleştirilmiş veya kişiselleştirilmemiş reklam sunmak için Reklam Kimliği, IP adresi ve cihaz bilgileri gibi verileri işleyebilir. Android ayarlarından Reklam Kimliğinizi sıfırlayabilir veya reklam kişiselleştirmeyi kapatabilirsiniz.</p>
+<ul>
+<li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Unity: <a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></li>
 </ul>
 
-<h2>Çocukların Gizliliği</h2>
-
-<p>
-FastCarMeta, 13 yaş altındaki çocuklardan bilerek kişisel veri toplamaz.
-Eğer bir ebeveyn veya veli, çocuğunun kişisel bilgi paylaştığını düşünüyorsa bizimle iletişime geçebilir.
-</p>
-
-<h2>Veri Güvenliği</h2>
-
-<p>
-Kullanıcı bilgilerinin korunması için makul teknik ve organizasyonel önlemler alınmaktadır.
-Ancak internet üzerinden yapılan veri iletimlerinin tamamen güvenli olduğu garanti edilemez.
-</p>
-
-<h2>Üçüncü Taraf Hizmetler</h2>
-
-<p>
-Uygulama aşağıdaki üçüncü taraf hizmetleri kullanabilir:
-</p>
-
+<h2>3. Verilerin Kullanım Amaçları</h2>
 <ul>
-<li>Google AdMob</li>
+<li>Oyunun ve çok oyunculu yarışların çalışmasını sağlamak</li>
+<li>Genel sıralama ve rekorları göstermek</li>
+<li>Performansı iyileştirmek, hataları tespit etmek</li>
+<li>Reklam hizmetleri sunmak ve ölçmek</li>
+<li>Hile ve kötüye kullanımı önlemek</li>
+</ul>
+
+<h2>4. Saklama ve Silme</h2>
+<p>Sıralama verileri (oyuncu adı, rastgele kimlik, puan, süre) sunucumuzda saklanır. Bunları silmek için uygulamada <b>Hakkında &gt; Çevrimiçi Verilerimi Sil</b> düğmesini kullanabilir veya Hakkında ekranında görünen oyuncu kimliğinizle aşağıdaki e-posta adresine yazabilirsiniz. Cihazdaki yerel veriler uygulamayı kaldırdığınızda silinir.</p>
+
+<h2>5. Paylaşım</h2>
+<p>Kişisel verilerinizi satmayız. Veriler yalnızca hizmet sağlayıcılarla (sunucu barındırma, reklam ağları, Google Play Hizmetleri) ve yasal zorunluluk halinde yetkili makamlarla paylaşılabilir.</p>
+
+<h2>6. Çocukların Gizliliği</h2>
+<p>FastCarMeta, 13 yaş altındaki çocuklardan bilerek kişisel veri toplamaz. Bir ebeveyn veya veli çocuğunun bilgi paylaştığını düşünüyorsa bizimle iletişime geçebilir; ilgili veriyi sileriz.</p>
+
+<h2>7. Veri Güvenliği</h2>
+<p>Veriler iletişimde şifreli bağlantı (HTTPS/WSS) ile aktarılır ve makul teknik önlemlerle korunur. İnternet üzerinden hiçbir iletimin tamamen güvenli olduğu garanti edilemez.</p>
+
+<h2>8. Haklarınız</h2>
+<p>Yürürlükteki mevzuat (KVKK, GDPR vb.) kapsamında verilerinize erişme, düzeltme, silme ve işlemeye itiraz etme hakkına sahipsiniz. Taleplerinizi aşağıdaki e-posta adresine iletebilirsiniz.</p>
+
+<h2>9. Üçüncü Taraf Hizmetler</h2>
+<ul>
+<li>Unity LevelPlay (ironSource) ve bağlı reklam ağları</li>
+<li>Google Play Hizmetleri</li>
+<li>Sunucu barındırma: Render</li>
+</ul>
+
+<h2>10. Politika Değişiklikleri</h2>
+<p>Bu politika zaman zaman güncellenebilir. Güncel sürüm bu sayfada yayınlanır.</p>
+
+<h2>11. İletişim</h2>
+<p>Geliştirici: @aykutsen1987<br>E-posta: <a href="mailto:aykutsen1987@gmail.com">aykutsen1987@gmail.com</a></p>
+</div>
+
+<!-- ===================== ENGLISH ===================== -->
+<div id="en" class="lang">
+<h1>FastCarMeta Privacy Policy</h1>
+<p>Last updated: November 1, 2026</p>
+<p>This Privacy Policy explains what information is processed when you use the FastCarMeta mobile game (package name: com.fastcarmeta.game), how it is used, and your rights. By using the app you accept this policy.</p>
+
+<h2>1. Information We Collect</h2>
+<p><b>There are no accounts.</b> FastCarMeta does not ask for your name, e-mail, phone number, GPS location or contacts.</p>
+<p><b>a) Technical information collected automatically</b></p>
+<ul>
+<li>Device model and operating system version</li>
+<li>App usage statistics, crash and error reports</li>
+<li>Advertising ID</li>
+<li>IP address and connection information</li>
+</ul>
+<p><b>b) Multiplayer and ranking features (in game)</b></p>
+<ul>
+<li><b>Player name:</b> a nickname you type (up to 14 characters). We recommend not using your real name.</li>
+<li><b>Random device ID (UUID):</b> generated randomly by the app to recognise you in rankings; it is not linked to your Google account or identity.</li>
+<li><b>Race results:</b> track, score and time.</li>
+<li><b>Car position during a race:</b> sent in real time to synchronise with other players; it is not stored permanently.</li>
+</ul>
+<p><b>c) Stored on your device:</b> game progress, settings, records and your player name are kept on your device only.</p>
+
+<h2>2. Advertising Services</h2>
+<p>FastCarMeta may use the Unity LevelPlay (ironSource) ad mediation platform and the ad networks connected to it (e.g. Unity Ads, Google AdMob) to show ads. These services may process data such as the Advertising ID, IP address and device information to deliver personalised or non-personalised ads. You can reset your Advertising ID or turn off ad personalisation in Android settings.</p>
+<ul>
+<li>Google: <a href="https://policies.google.com/privacy">https://policies.google.com/privacy</a></li>
+<li>Unity: <a href="https://unity.com/legal/privacy-policy">https://unity.com/legal/privacy-policy</a></li>
+</ul>
+
+<h2>3. How We Use Data</h2>
+<ul>
+<li>To run the game and online races</li>
+<li>To show global rankings and records</li>
+<li>To improve performance and detect errors</li>
+<li>To deliver and measure advertising</li>
+<li>To prevent cheating and abuse</li>
+</ul>
+
+<h2>4. Retention and Deletion</h2>
+<p>Ranking data (player name, random ID, score, time) is stored on our server. To delete it, use <b>About &gt; Delete My Online Data</b> in the app, or e-mail us the player ID shown on the About screen. Local data on your device is removed when you uninstall the app.</p>
+
+<h2>5. Sharing</h2>
+<p>We do not sell your personal data. Data may be shared only with service providers (server hosting, ad networks, Google Play Services) and with authorities when legally required.</p>
+
+<h2>6. Children's Privacy</h2>
+<p>FastCarMeta does not knowingly collect personal data from children under 13. If a parent or guardian believes their child has shared information, please contact us and we will delete it.</p>
+
+<h2>7. Data Security</h2>
+<p>Data is transmitted over encrypted connections (HTTPS/WSS) and protected with reasonable technical measures. No transmission over the internet can be guaranteed to be completely secure.</p>
+
+<h2>8. Your Rights</h2>
+<p>Under applicable law (e.g. GDPR, KVKK) you may request access to, correction of, deletion of your data, or object to its processing. Send your requests to the e-mail address below.</p>
+
+<h2>9. Third-Party Services</h2>
+<ul>
+<li>Unity LevelPlay (ironSource) and connected ad networks</li>
 <li>Google Play Services</li>
-<li>Firebase Analytics (kullanılması durumunda)</li>
-<li>Firebase Crashlytics (kullanılması durumunda)</li>
+<li>Server hosting: Render</li>
 </ul>
 
-<h2>Politika Değişiklikleri</h2>
+<h2>10. Changes to This Policy</h2>
+<p>This policy may be updated from time to time. The current version is published on this page.</p>
 
-<p>
-Bu Gizlilik Politikası zaman zaman güncellenebilir.
-Güncellenen sürüm bu sayfada yayınlanacaktır.
-</p>
+<h2>11. Contact</h2>
+<p>Developer: @aykutsen1987<br>E-mail: <a href="mailto:aykutsen1987@gmail.com">aykutsen1987@gmail.com</a></p>
+</div>
 
-<h2>İletişim</h2>
-
-<p>
-Gizlilik Politikası hakkında sorularınız için:
-</p>
-
-<p>
-Geliştirici: @aykutsen1987<br>
-E-posta: aykutsen1987@gmail.com
-</p>
-
+<noscript><style>.lang{display:block !important}</style></noscript>
+<script>
+  function setLang(l) {
+    document.getElementById('tr').className = 'lang' + (l === 'tr' ? ' show' : '');
+    document.getElementById('en').className = 'lang' + (l === 'en' ? ' show' : '');
+    document.getElementById('btn-tr').className = l === 'tr' ? 'on' : '';
+    document.getElementById('btn-en').className = l === 'en' ? 'on' : '';
+    document.documentElement.lang = l;
+    try { localStorage.setItem('fcm_lang', l); } catch (e) {}
+  }
+  (function () {
+    var q = new URLSearchParams(location.search).get('lang');
+    var saved = null;
+    try { saved = localStorage.getItem('fcm_lang'); } catch (e) {}
+    var l = q || saved || ((navigator.language || 'tr').toLowerCase().indexOf('tr') === 0 ? 'tr' : 'en');
+    setLang(l === 'en' ? 'en' : 'tr');
+  })();
+</script>
 </body>
 </html>
